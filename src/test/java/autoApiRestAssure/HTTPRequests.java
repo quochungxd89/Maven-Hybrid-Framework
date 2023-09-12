@@ -1,13 +1,25 @@
 package autoApiRestAssure;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
 
-public class HTTPRequests {
+import java.util.HashMap;
+/*
+	given()
+		content type, set cookie, add auth, add param, set headers info ...
+	when()
+		get, post, put, delete
+	then()
+		validate status  code, axtract response, extract headers cookies & response body
+		*/
 
-	@Test
+
+public class HTTPRequests {
+	int id;
+	@Test(priority = 1)
 	void getUser() {
 
 		given().when().get("https://reqres.in/api/users?page=2")
@@ -15,10 +27,44 @@ public class HTTPRequests {
 				.then().statusCode(200).body("page", equalTo(2)).log().all();
 
 	}
+	@Test(priority = 2)
 	void creatUser() {
+		HashMap data = new HashMap<>();
+		data.put("name","pavan");
+		data.put("job","trainer");
+		id = given()
+				.contentType("application/json")
+				.body(data)
+		.when()
+				.post("https://reqres.in/api/users")
+				.jsonPath().getInt("id");
+//				.then()
+//				.statusCode(201)
+//				.log().all();
 
-		given().body("pre condition")
-				.when().get("https://reqres.in/api/users")
-				.then().statusCode(201).body()
+					}
+	@Test(priority = 3, dependsOnMethods = {"creatUser"})
+	void updateUser() {
+		HashMap data = new HashMap<>();
+		data.put("name","john");
+		data.put("job","teacher");
+		given()
+				.contentType("application/json")
+				.body(data)
+				.when()
+				.put("https://reqres.in/api/users/" + id)
+				.then()
+				.statusCode(200)
+				.log().all();
+	}
+	@Test(priority = 4)
+	void deleteUser(){
+		given()
+				.when()
+				.delete("https://reqres.in/api/users/" + id)
+
+				.then()
+				.statusCode(204)
+				.log().all();
 	}
 }
