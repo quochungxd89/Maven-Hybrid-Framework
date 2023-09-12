@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>TestNG:  Run on Firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on Firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 24 22:04:00 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11601 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.user.Level_20_Faker_Data.User_01_Register()'><b>User_01_Register</b><br>Test class: com.nopcommerce.user.Level_20_Faker_Data<br/>
+<a href="#Output-529864074" onClick='toggleBox("Output-529864074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-529864074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-529864074">
+ [2023-08-24 22:04:05,834] Register - step 01: Navigate to 'Register' page
+<br><br/>
+ [2023-08-24 22:04:06,997] Register - step 02: enter to Firstname textbox with value is 'Carman'
+<br><br/>
+ [2023-08-24 22:04:07,096] Register - step 03: enter to lastName textbox with value is 'Koelpin'
+<br><br/>
+ [2023-08-24 22:04:07,415] Register - step 04: enter to Email textbox with value is 'wilson.nitzsche@hotmail.com'
+<br><br/>
+ [2023-08-24 22:04:07,537] Register - step 05: enter to Password textbox with value is '&beBD$l4!n'
+<br><br/>
+ [2023-08-24 22:04:07,625] Register - step 06: enter to confirmPassword textbox with value is '&beBD$l4!n'
+<br><br/>
+ [2023-08-24 22:04:07,717] Register - step 07: click to 'Register' Button
+<br><br/>
+ [2023-08-24 22:04:08,619] Login - step 08: verify 'succes message' is displayed
+<br><br/>
+ [2023-08-24 22:04:08,663]  -------------------------- PASSED -------------------------- 
+<br><br/>
+ [2023-08-24 22:04:08,663] Register - step 09: click to 'Home Page' link
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.user.Level_20_Faker_Data@151335cb</td></tr>
+<tr>
+<td title='com.nopcommerce.user.Level_20_Faker_Data.User_02_Login()'><b>User_02_Login</b><br>Test class: com.nopcommerce.user.Level_20_Faker_Data<br/>
+<a href="#Output-2131361552" onClick='toggleBox("Output-2131361552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2131361552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2131361552">
+ [2023-08-24 22:04:09,364] Login - step 01: Navigate to 'Register' page
+<br><br/>
+ [2023-08-24 22:04:09,752] Login - step 02: enter to Email textbox with value is 'wilson.nitzsche@hotmail.com'
+<br><br/>
+ [2023-08-24 22:04:09,835] Login - step 03: enter to Password textbox with value is '&beBD$l4!n'
+<br><br/>
+ [2023-08-24 22:04:09,915] Login - step 04: click to 'Login' button
+<br><br/>
+ [2023-08-24 22:04:10,605] Login - step 05: verify 'My account link' is displayed
+<br><br/>
+ [2023-08-24 22:04:10,654]  -------------------------- PASSED -------------------------- 
+<br><br/>
+ [2023-08-24 22:04:10,654] Login - step 06: click to 'My account' link
+<br><br/>
+ [2023-08-24 22:04:11,081] Login - step 07: verify 'customer info' page is displayed
+<br><br/>
+ [2023-08-24 22:04:11,118]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.user.Level_20_Faker_Data@151335cb</td></tr>
+<tr>
+<td title='com.nopcommerce.user.Level_20_Faker_Data.User_03_My_Account()'><b>User_03_My_Account</b><br>Test class: com.nopcommerce.user.Level_20_Faker_Data<br/>
+<a href="#Output-800786831" onClick='toggleBox("Output-800786831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-800786831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800786831">
+ [2023-08-24 22:04:11,123] Myaccount - step 01: Navigate to 'My account' Page
+<br><br/>
+ [2023-08-24 22:04:11,515] Myaccount - step 02: verify 'customer info' page is displayed
+<br><br/>
+ [2023-08-24 22:04:11,548]  -------------------------- PASSED -------------------------- 
+<br><br/>
+ [2023-08-24 22:04:11,548] Myaccount - step 03: verify 'Firt Name' value is correctly
+<br><br/>
+ [2023-08-24 22:04:11,579]  -------------------------- PASSED -------------------------- 
+<br><br/>
+ [2023-08-24 22:04:11,579] Myaccount - step 03: verify 'Last Name' value is correctly
+<br><br/>
+ [2023-08-24 22:04:11,611]  -------------------------- PASSED -------------------------- 
+<br><br/>
+ [2023-08-24 22:04:11,611] Myaccount - step 03: verify 'Email Name' value is correctly
+<br><br/>
+ [2023-08-24 22:04:11,639]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.Level_20_Faker_Data@151335cb</td></tr>
+</table><p>
+</body>
+</html>

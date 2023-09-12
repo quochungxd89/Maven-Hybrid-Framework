@@ -1,0 +1,311 @@
+ [2023-08-22 21:19:50,479] Register - step 01: Navigate to 'Register' page
+ [2023-08-22 21:19:51,627] Register - step 02: enter to Firstname textbox with value is 'Dino'
+ [2023-08-22 21:19:51,743] Register - step 03: enter to lastName textbox with value is 'Cummerata'
+ [2023-08-22 21:19:52,098] Register - step 04: enter to Email textbox with value is 'logan.connelly@yahoo.com'
+ [2023-08-22 21:19:52,234] Register - step 05: enter to Password textbox with value is 'zj2a8$j2'
+ [2023-08-22 21:19:52,326] Register - step 06: enter to confirmPassword textbox with value is 'zj2a8$j2'
+ [2023-08-22 21:19:52,423] Register - step 07: click to 'Register' Button
+ [2023-08-22 21:19:53,115] Login - step 08: verify 'succes message' is displayed
+ [2023-08-22 21:19:53,167]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:53,167] Register - step 09: click to 'Home Page' link
+ [2023-08-22 21:19:53,664] Login - step 01: Navigate to 'Register' page
+ [2023-08-22 21:19:54,051] Login - step 02: enter to Email textbox with value is 'logan.connelly@yahoo.com'
+ [2023-08-22 21:19:54,150] Login - step 03: enter to Password textbox with value is 'zj2a8$j2'
+ [2023-08-22 21:19:54,243] Login - step 04: click to 'Login' button
+ [2023-08-22 21:19:54,931] Login - step 05: verify 'My account link' is displayed
+ [2023-08-22 21:19:54,981]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:54,981] Login - step 06: click to 'My account' link
+ [2023-08-22 21:19:55,371] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-22 21:19:55,414]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:55,420] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-22 21:19:55,806] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-22 21:19:55,853]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:55,853] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-22 21:19:55,889]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:55,889] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-22 21:19:55,928]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:55,928] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-22 21:19:55,965]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:19:55,969] OS name = windows 11
+ [2023-08-22 21:19:55,969] Driver instance name = chromedriver: chrome on windows (4c49955a02c29d84f3d30658acd34586)
+ [2023-08-22 21:37:17,891] Register - step 01: Navigate to 'Register' page
+ [2023-08-22 21:37:19,014] Register - step 02: enter to Firstname textbox with value is 'Earleen'
+ [2023-08-22 21:37:19,137] Register - step 03: enter to lastName textbox with value is 'Goyette'
+ [2023-08-22 21:37:19,516] Register - step 04: enter to Email textbox with value is 'britt.lemke@gmail.com'
+ [2023-08-22 21:37:19,659] Register - step 05: enter to Password textbox with value is 'snp#9NAg'
+ [2023-08-22 21:37:19,758] Register - step 06: enter to confirmPassword textbox with value is 'snp#9NAg'
+ [2023-08-22 21:37:19,859] Register - step 07: click to 'Register' Button
+ [2023-08-22 21:37:20,532] Login - step 08: verify 'succes message' is displayed
+ [2023-08-22 21:37:20,580]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:20,580] Register - step 09: click to 'Home Page' link
+ [2023-08-22 21:37:21,067] Login - step 01: Navigate to 'Register' page
+ [2023-08-22 21:37:21,983] Login - step 02: enter to Email textbox with value is 'britt.lemke@gmail.com'
+ [2023-08-22 21:37:22,081] Login - step 03: enter to Password textbox with value is 'snp#9NAg'
+ [2023-08-22 21:37:22,175] Login - step 04: click to 'Login' button
+ [2023-08-22 21:37:22,840] Login - step 05: verify 'My account link' is displayed
+ [2023-08-22 21:37:22,896]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:22,896] Login - step 06: click to 'My account' link
+ [2023-08-22 21:37:23,274] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-22 21:37:23,318]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:23,322] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-22 21:37:23,689] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-22 21:37:23,731]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:23,731] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-22 21:37:23,768]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:23,769] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-22 21:37:23,811]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:23,811] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-22 21:37:23,850]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:23,856] OS name = windows 11
+ [2023-08-22 21:37:23,856] Driver instance name = chromedriver: chrome on windows (c091b76dcdd1c9d34ca4f80c359c4a10)
+ [2023-08-22 21:37:53,946] Register - step 01: Navigate to 'Register' page
+ [2023-08-22 21:37:55,113] Register - step 02: enter to Firstname textbox with value is 'Ismael'
+ [2023-08-22 21:37:55,248] Register - step 03: enter to lastName textbox with value is 'Lowe'
+ [2023-08-22 21:37:55,621] Register - step 04: enter to Email textbox with value is 'heather.marquardt@gmail.com'
+ [2023-08-22 21:37:55,768] Register - step 05: enter to Password textbox with value is '$l%&sH#5!'
+ [2023-08-22 21:37:55,864] Register - step 06: enter to confirmPassword textbox with value is '$l%&sH#5!'
+ [2023-08-22 21:37:55,968] Register - step 07: click to 'Register' Button
+ [2023-08-22 21:37:56,679] Login - step 08: verify 'succes message' is displayed
+ [2023-08-22 21:37:56,725]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:37:56,725] Register - step 09: click to 'Home Page' link
+ [2023-08-22 21:37:57,311] Login - step 01: Navigate to 'Register' page
+ [2023-08-22 21:38:08,804] Login - step 02: enter to Email textbox with value is 'heather.marquardt@gmail.com'
+ [2023-08-22 21:38:08,921] Login - step 03: enter to Password textbox with value is '$l%&sH#5!'
+ [2023-08-22 21:38:09,027] Login - step 04: click to 'Login' button
+ [2023-08-22 21:38:09,812] Login - step 05: verify 'My account link' is displayed
+ [2023-08-22 21:38:09,862]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:38:09,862] Login - step 06: click to 'My account' link
+ [2023-08-22 21:38:10,262] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-22 21:38:10,309]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:38:10,316] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-22 21:38:10,688] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-22 21:38:10,734]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:38:10,734] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-22 21:38:10,776]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:38:10,776] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-22 21:38:10,829]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:38:10,829] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-22 21:38:10,895]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:38:10,901] OS name = windows 11
+ [2023-08-22 21:38:10,901] Driver instance name = chromedriver: chrome on windows (7241fefd44c168cf0f2d4b6ba784bf1f)
+ [2023-08-22 21:42:08,840] Register - step 01: Navigate to 'Register' page
+ [2023-08-22 21:42:09,958] Register - step 02: enter to Firstname textbox with value is 'Bruno'
+ [2023-08-22 21:42:10,066] Register - step 03: enter to lastName textbox with value is 'Prosacco'
+ [2023-08-22 21:42:10,455] Register - step 04: enter to Email textbox with value is 'kendrick.okuneva@yahoo.com'
+ [2023-08-22 21:42:10,595] Register - step 05: enter to Password textbox with value is 'b$8f8Q$mo@1'
+ [2023-08-22 21:42:10,709] Register - step 06: enter to confirmPassword textbox with value is 'b$8f8Q$mo@1'
+ [2023-08-22 21:42:10,825] Register - step 07: click to 'Register' Button
+ [2023-08-22 21:42:11,606] Login - step 08: verify 'succes message' is displayed
+ [2023-08-22 21:42:11,655]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:11,655] Register - step 09: click to 'Home Page' link
+ [2023-08-22 21:42:12,191] Login - step 01: Navigate to 'Register' page
+ [2023-08-22 21:42:12,589] Login - step 02: enter to Email textbox with value is 'kendrick.okuneva@yahoo.com'
+ [2023-08-22 21:42:12,687] Login - step 03: enter to Password textbox with value is 'b$8f8Q$mo@1'
+ [2023-08-22 21:42:12,787] Login - step 04: click to 'Login' button
+ [2023-08-22 21:42:14,017] Login - step 05: verify 'My account link' is displayed
+ [2023-08-22 21:42:14,076]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:14,076] Login - step 06: click to 'My account' link
+ [2023-08-22 21:42:14,476] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-22 21:42:14,524]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:14,529] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-22 21:42:14,902] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-22 21:42:14,943]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:14,944] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-22 21:42:14,977]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:14,977] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-22 21:42:15,008]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:15,008] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-22 21:42:15,038]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:42:15,043] OS name = windows 11
+ [2023-08-22 21:42:15,043] Driver instance name = chromedriver: chrome on windows (af28a2c77cac1245c1382bc7a54ffac7)
+ [2023-08-22 21:54:46,217] Register - step 01: Navigate to 'Register' page
+ [2023-08-22 21:54:47,295] Register - step 02: enter to Firstname textbox with value is 'Shannon'
+ [2023-08-22 21:54:47,394] Register - step 03: enter to lastName textbox with value is 'Fritsch'
+ [2023-08-22 21:54:47,721] Register - step 04: enter to Email textbox with value is 'brant.marks@hotmail.com'
+ [2023-08-22 21:54:47,853] Register - step 05: enter to Password textbox with value is '#5GWVkC*f9u'
+ [2023-08-22 21:54:47,942] Register - step 06: enter to confirmPassword textbox with value is '#5GWVkC*f9u'
+ [2023-08-22 21:54:48,035] Register - step 07: click to 'Register' Button
+ [2023-08-22 21:54:48,714] Login - step 08: verify 'succes message' is displayed
+ [2023-08-22 21:54:48,760]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:48,760] Register - step 09: click to 'Home Page' link
+ [2023-08-22 21:54:49,215] Login - step 01: Navigate to 'Register' page
+ [2023-08-22 21:54:49,586] Login - step 02: enter to Email textbox with value is 'brant.marks@hotmail.com'
+ [2023-08-22 21:54:49,673] Login - step 03: enter to Password textbox with value is '#5GWVkC*f9u'
+ [2023-08-22 21:54:49,758] Login - step 04: click to 'Login' button
+ [2023-08-22 21:54:50,402] Login - step 05: verify 'My account link' is displayed
+ [2023-08-22 21:54:50,453]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:50,454] Login - step 06: click to 'My account' link
+ [2023-08-22 21:54:50,819] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-22 21:54:50,866]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:50,870] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-22 21:54:51,274] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-22 21:54:51,313]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:51,314] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-22 21:54:51,352]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:51,352] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-22 21:54:51,382]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:51,382] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-22 21:54:51,425]  -------------------------- PASSED -------------------------- 
+ [2023-08-22 21:54:51,429] OS name = windows 11
+ [2023-08-22 21:54:51,429] Driver instance name = chromedriver: chrome on windows (97b22700dafde051dc3555f33c2f4707)
+ [2023-08-23 19:32:16,621] Register - step 01: Navigate to 'Register' page
+ [2023-08-23 19:32:17,803] Register - step 02: enter to Firstname textbox with value is 'Marceline'
+ [2023-08-23 19:32:17,922] Register - step 03: enter to lastName textbox with value is 'Orn'
+ [2023-08-23 19:32:18,374] Register - step 04: enter to Email textbox with value is 'roma.schuppe@gmail.com'
+ [2023-08-23 19:32:18,501] Register - step 05: enter to Password textbox with value is 'JrMWTq$3vH#'
+ [2023-08-23 19:32:18,586] Register - step 06: enter to confirmPassword textbox with value is 'JrMWTq$3vH#'
+ [2023-08-23 19:32:18,681] Register - step 07: click to 'Register' Button
+ [2023-08-23 19:32:19,897] Login - step 08: verify 'succes message' is displayed
+ [2023-08-23 19:32:19,942]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:19,942] Register - step 09: click to 'Home Page' link
+ [2023-08-23 19:32:20,478] Login - step 01: Navigate to 'Register' page
+ [2023-08-23 19:32:20,855] Login - step 02: enter to Email textbox with value is 'roma.schuppe@gmail.com'
+ [2023-08-23 19:32:20,940] Login - step 03: enter to Password textbox with value is 'JrMWTq$3vH#'
+ [2023-08-23 19:32:21,027] Login - step 04: click to 'Login' button
+ [2023-08-23 19:32:21,690] Login - step 05: verify 'My account link' is displayed
+ [2023-08-23 19:32:21,738]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:21,738] Login - step 06: click to 'My account' link
+ [2023-08-23 19:32:22,118] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-23 19:32:22,167]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:22,170] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-23 19:32:22,552] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-23 19:32:22,585]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:22,585] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-23 19:32:22,617]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:22,617] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-23 19:32:22,645]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:22,645] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-23 19:32:22,676]  -------------------------- PASSED -------------------------- 
+ [2023-08-23 19:32:22,680] OS name = windows 11
+ [2023-08-23 19:32:22,680] Driver instance name = chromedriver: chrome on windows (cfe9c73f56e7b382110a271d094ee134)
+ [2023-08-24 20:01:32,071] Register - step 01: Navigate to 'Register' page
+ [2023-08-24 20:01:33,221] Register - step 02: enter to Firstname textbox with value is 'Cassie'
+ [2023-08-24 20:01:33,328] Register - step 03: enter to lastName textbox with value is 'Jacobs'
+ [2023-08-24 20:01:33,651] Register - step 04: enter to Email textbox with value is 'gladis.nitzsche@yahoo.com'
+ [2023-08-24 20:01:33,785] Register - step 05: enter to Password textbox with value is 'P$FL!z9PDj'
+ [2023-08-24 20:01:33,884] Register - step 06: enter to confirmPassword textbox with value is 'P$FL!z9PDj'
+ [2023-08-24 20:01:33,972] Register - step 07: click to 'Register' Button
+ [2023-08-24 20:01:34,702] Login - step 08: verify 'succes message' is displayed
+ [2023-08-24 20:01:34,744]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:34,744] Register - step 09: click to 'Home Page' link
+ [2023-08-24 20:01:35,296] Login - step 01: Navigate to 'Register' page
+ [2023-08-24 20:01:36,186] Login - step 02: enter to Email textbox with value is 'gladis.nitzsche@yahoo.com'
+ [2023-08-24 20:01:36,271] Login - step 03: enter to Password textbox with value is 'P$FL!z9PDj'
+ [2023-08-24 20:01:36,353] Login - step 04: click to 'Login' button
+ [2023-08-24 20:01:38,614] Login - step 05: verify 'My account link' is displayed
+ [2023-08-24 20:01:38,667]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:38,667] Login - step 06: click to 'My account' link
+ [2023-08-24 20:01:39,070] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-24 20:01:39,108]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:39,112] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-24 20:01:39,510] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-24 20:01:39,548]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:39,548] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-24 20:01:39,582]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:39,582] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-24 20:01:39,616]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:39,616] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-24 20:01:39,647]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 20:01:39,650] OS name = windows 11
+ [2023-08-24 20:01:39,650] Driver instance name = chromedriver: chrome on windows (f019425017a3a175e1dd70d5bc3c0792)
+ [2023-08-24 22:04:05,834] Register - step 01: Navigate to 'Register' page
+ [2023-08-24 22:04:06,997] Register - step 02: enter to Firstname textbox with value is 'Carman'
+ [2023-08-24 22:04:07,096] Register - step 03: enter to lastName textbox with value is 'Koelpin'
+ [2023-08-24 22:04:07,415] Register - step 04: enter to Email textbox with value is 'wilson.nitzsche@hotmail.com'
+ [2023-08-24 22:04:07,537] Register - step 05: enter to Password textbox with value is '&beBD$l4!n'
+ [2023-08-24 22:04:07,625] Register - step 06: enter to confirmPassword textbox with value is '&beBD$l4!n'
+ [2023-08-24 22:04:07,717] Register - step 07: click to 'Register' Button
+ [2023-08-24 22:04:08,619] Login - step 08: verify 'succes message' is displayed
+ [2023-08-24 22:04:08,663]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:08,663] Register - step 09: click to 'Home Page' link
+ [2023-08-24 22:04:09,364] Login - step 01: Navigate to 'Register' page
+ [2023-08-24 22:04:09,752] Login - step 02: enter to Email textbox with value is 'wilson.nitzsche@hotmail.com'
+ [2023-08-24 22:04:09,835] Login - step 03: enter to Password textbox with value is '&beBD$l4!n'
+ [2023-08-24 22:04:09,915] Login - step 04: click to 'Login' button
+ [2023-08-24 22:04:10,605] Login - step 05: verify 'My account link' is displayed
+ [2023-08-24 22:04:10,654]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:10,654] Login - step 06: click to 'My account' link
+ [2023-08-24 22:04:11,081] Login - step 07: verify 'customer info' page is displayed
+ [2023-08-24 22:04:11,118]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:11,123] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-08-24 22:04:11,515] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-08-24 22:04:11,548]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:11,548] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-08-24 22:04:11,579]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:11,579] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-08-24 22:04:11,611]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:11,611] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-08-24 22:04:11,639]  -------------------------- PASSED -------------------------- 
+ [2023-08-24 22:04:11,642] OS name = windows 11
+ [2023-08-24 22:04:11,642] Driver instance name = chromedriver: chrome on windows (a04f7e2f484fdf381019750fc4ad8e40)
+ [2023-09-12 20:05:45,770] Register - step 01: Navigate to 'Register' page
+ [2023-09-12 20:05:47,383] Register - step 02: enter to Firstname textbox with value is 'Carey'
+ [2023-09-12 20:05:47,603] Register - step 03: enter to lastName textbox with value is 'Adams'
+ [2023-09-12 20:05:48,294] Register - step 04: enter to Email textbox with value is 'loreta.gerhold@hotmail.com'
+ [2023-09-12 20:05:48,623] Register - step 05: enter to Password textbox with value is 'bM&HfcZ$1MB'
+ [2023-09-12 20:05:48,846] Register - step 06: enter to confirmPassword textbox with value is 'bM&HfcZ$1MB'
+ [2023-09-12 20:05:49,036] Register - step 07: click to 'Register' Button
+ [2023-09-12 20:05:50,513] Login - step 08: verify 'succes message' is displayed
+ [2023-09-12 20:05:50,570]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:50,570] Register - step 09: click to 'Home Page' link
+ [2023-09-12 20:05:54,322] Login - step 01: Navigate to 'Register' page
+ [2023-09-12 20:05:55,084] Login - step 02: enter to Email textbox with value is 'loreta.gerhold@hotmail.com'
+ [2023-09-12 20:05:55,458] Login - step 03: enter to Password textbox with value is 'bM&HfcZ$1MB'
+ [2023-09-12 20:05:55,598] Login - step 04: click to 'Login' button
+ [2023-09-12 20:05:56,543] Login - step 05: verify 'My account link' is displayed
+ [2023-09-12 20:05:56,615]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:56,812] Login - step 06: click to 'My account' link
+ [2023-09-12 20:05:57,476] Login - step 07: verify 'customer info' page is displayed
+ [2023-09-12 20:05:57,952]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:57,973] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-09-12 20:05:58,323] Register - step 01: Navigate to 'Register' page
+ [2023-09-12 20:05:58,794] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-09-12 20:05:58,851]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:58,852] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-09-12 20:05:58,909]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:58,909] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-09-12 20:05:58,975]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:58,975] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-09-12 20:05:59,036]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:05:59,038] OS name = windows 11
+ [2023-09-12 20:05:59,038] Driver instance name = chromedriver: chrome on windows (90ef284deecff255d8d11d0427de274f)
+ [2023-09-12 20:05:59,766] Register - step 02: enter to Firstname textbox with value is 'Damien'
+ [2023-09-12 20:05:59,954] Register - step 03: enter to lastName textbox with value is 'MacGyver'
+ [2023-09-12 20:06:04,174] Login - step 01: Navigate to 'Register' page
+ [2023-09-12 20:06:08,299] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-09-12 20:06:12,386] OS name = windows 11
+ [2023-09-12 20:06:12,386] Driver instance name = chromedriver: chrome on windows (b371b56c631878795aec4aaecdb8996d)
+ [2023-09-12 20:06:16,519] java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8864
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LINHLE', ip: '192.168.1.9', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+ [2023-09-12 20:08:06,292] Register - step 01: Navigate to 'Register' page
+ [2023-09-12 20:08:07,036] Register - step 02: enter to Firstname textbox with value is 'Whitney'
+ [2023-09-12 20:08:07,185] Register - step 03: enter to lastName textbox with value is 'Funk'
+ [2023-09-12 20:08:07,681] Register - step 04: enter to Email textbox with value is 'glory.goyette@hotmail.com'
+ [2023-09-12 20:08:07,874] Register - step 05: enter to Password textbox with value is '1#AH%ethC'
+ [2023-09-12 20:08:08,001] Register - step 06: enter to confirmPassword textbox with value is '1#AH%ethC'
+ [2023-09-12 20:08:08,122] Register - step 07: click to 'Register' Button
+ [2023-09-12 20:08:08,890] Login - step 08: verify 'succes message' is displayed
+ [2023-09-12 20:08:08,951]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:08,951] Register - step 09: click to 'Home Page' link
+ [2023-09-12 20:08:09,484] Login - step 01: Navigate to 'Register' page
+ [2023-09-12 20:08:09,928] Login - step 02: enter to Email textbox with value is 'glory.goyette@hotmail.com'
+ [2023-09-12 20:08:10,050] Login - step 03: enter to Password textbox with value is '1#AH%ethC'
+ [2023-09-12 20:08:10,183] Login - step 04: click to 'Login' button
+ [2023-09-12 20:08:10,967] Login - step 05: verify 'My account link' is displayed
+ [2023-09-12 20:08:11,028]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:11,028] Login - step 06: click to 'My account' link
+ [2023-09-12 20:08:11,594] Login - step 07: verify 'customer info' page is displayed
+ [2023-09-12 20:08:11,677]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:11,681] Myaccount - step 01: Navigate to 'My account' Page
+ [2023-09-12 20:08:12,090] Myaccount - step 02: verify 'customer info' page is displayed
+ [2023-09-12 20:08:12,158]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:12,158] Myaccount - step 03: verify 'Firt Name' value is correctly
+ [2023-09-12 20:08:12,218]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:12,218] Myaccount - step 03: verify 'Last Name' value is correctly
+ [2023-09-12 20:08:12,280]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:12,280] Myaccount - step 03: verify 'Email Name' value is correctly
+ [2023-09-12 20:08:12,342]  -------------------------- PASSED -------------------------- 
+ [2023-09-12 20:08:12,344] OS name = windows 11
+ [2023-09-12 20:08:12,344] Driver instance name = chromedriver: chrome on windows (f7a8c646fd8ec2d3ac3bc01a11ba86ab)
