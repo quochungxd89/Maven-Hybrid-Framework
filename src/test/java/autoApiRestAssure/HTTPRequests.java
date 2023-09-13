@@ -41,6 +41,7 @@ public class HTTPRequests {
 //				.then()
 //				.statusCode(201)
 //				.log().all();
+		System.out.println(id);
 
 					}
 	@Test(priority = 3, dependsOnMethods = {"creatUser"})
