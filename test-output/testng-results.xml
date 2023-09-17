@@ -1,17 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:50,508] **************Creating user**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:54,760] **************User info is displayed**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:54,802] **************Reading user info**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:56,718] **************User info is displayed**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:56,726] **************Updating user**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:58,550] **************User updated**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:39:59,962] **************Deleting user**************
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[ [2023-09-17 14:40:01,341] **************user deleted**************
+<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-08-28T15:52:57Z" name="Default suite" finished-at="2023-08-28T15:53:01Z" duration-ms="4117">
+  <suite started-at="2023-09-17T07:39:49Z" name="Default suite" finished-at="2023-09-17T07:40:01Z" duration-ms="11455">
     <groups>
     </groups>
-    <test started-at="2023-08-28T15:52:57Z" name="Default test" finished-at="2023-08-28T15:53:01Z" duration-ms="4117">
-      <class name="autoApiRestAssure.HTTPRequests">
-        <test-method signature="getUser()[pri:0, instance:autoApiRestAssure.HTTPRequests@33a630fa]" started-at="2023-08-28T15:52:57Z" name="getUser" finished-at="2023-08-28T15:53:01Z" duration-ms="3929" status="PASS">
+    <test started-at="2023-09-17T07:39:49Z" name="Default test" finished-at="2023-09-17T07:40:01Z" duration-ms="11455">
+      <class name="petStore.api.test.UserTests2">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:petStore.api.test.UserTests2@43f0c2d1]" started-at="2023-09-17T07:39:49Z" name="setupData" finished-at="2023-09-17T07:39:50Z" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUser -->
-      </class> <!-- autoApiRestAssure.HTTPRequests -->
+        </test-method> <!-- setupData -->
+        <test-method signature="testPostUser()[pri:1, instance:petStore.api.test.UserTests2@43f0c2d1]" started-at="2023-09-17T07:39:50Z" name="testPostUser" finished-at="2023-09-17T07:39:54Z" duration-ms="4355" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:50,508] **************Creating user**************
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:54,760] **************User info is displayed**************
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testGetUserByName()[pri:2, instance:petStore.api.test.UserTests2@43f0c2d1]" started-at="2023-09-17T07:39:54Z" name="testGetUserByName" finished-at="2023-09-17T07:39:56Z" duration-ms="1918" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:54,802] **************Reading user info**************
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:56,718] **************User info is displayed**************
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testGetUserByName -->
+        <test-method signature="testUpdateUserByName()[pri:3, instance:petStore.api.test.UserTests2@43f0c2d1]" started-at="2023-09-17T07:39:56Z" name="testUpdateUserByName" finished-at="2023-09-17T07:39:59Z" duration-ms="3236" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:56,726] **************Updating user**************
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:58,550] **************User updated**************
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName -->
+        <test-method signature="testDeleteUserByName()[pri:4, instance:petStore.api.test.UserTests2@43f0c2d1]" started-at="2023-09-17T07:39:59Z" name="testDeleteUserByName" finished-at="2023-09-17T07:40:01Z" duration-ms="1381" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ [2023-09-17 14:39:59,962] **************Deleting user**************
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[ [2023-09-17 14:40:01,341] **************user deleted**************
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+      </class> <!-- petStore.api.test.UserTests2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

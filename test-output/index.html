@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-1202289733\testng-customsuite.xml</span>
+                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--427389002\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="autoApiRestAssure.HTTPRequests" class="method navigator-link" hash-for-method="getUser">getUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="petStore.api.test.UserTests2" class="method navigator-link" hash-for-method="testDeleteUserByName">testDeleteUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="petStore.api.test.UserTests2" class="method navigator-link" hash-for-method="testGetUserByName">testGetUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="petStore.api.test.UserTests2" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="petStore.api.test.UserTests2" class="method navigator-link" hash-for-method="testUpdateUserByName">testUpdateUserByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +135,35 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">autoApiRestAssure.HTTPRequests</span>
+              <span class="class-name">petStore.api.test.UserTests2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getUser">
-                  </a> <!-- getUser -->
-                  <span class="method-name">getUser</span>
+                  <a name="testDeleteUserByName">
+                  </a> <!-- testDeleteUserByName -->
+                  <span class="method-name">testDeleteUserByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByName">
+                  </a> <!-- testGetUserByName -->
+                  <span class="method-name">testGetUserByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostUser">
+                  </a> <!-- testPostUser -->
+                  <span class="method-name">testPostUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserByName">
+                  </a> <!-- testUpdateUserByName -->
+                  <span class="method-name">testUpdateUserByName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +171,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-1202289733\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--427389002\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +180,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;autoApiRestAssure.HTTPRequests&quot;/&gt;
+      &lt;class name=&quot;petStore.api.test.UserTests2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +220,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getUser')
-data.setCell(0, 2, 'autoApiRestAssure.HTTPRequests')
-data.setCell(0, 3, 3929);
+data.setCell(0, 1, 'testPostUser')
+data.setCell(0, 2, 'petStore.api.test.UserTests2')
+data.setCell(0, 3, 4355);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testUpdateUserByName')
+data.setCell(1, 2, 'petStore.api.test.UserTests2')
+data.setCell(1, 3, 3236);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGetUserByName')
+data.setCell(2, 2, 'petStore.api.test.UserTests2')
+data.setCell(2, 3, 1918);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDeleteUserByName')
+data.setCell(3, 2, 'petStore.api.test.UserTests2')
+data.setCell(3, 3, 1381);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -204,6 +252,42 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testPostUser</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"> [2023-09-17 14:39:50,508] **************Creating user**************
+<br></span>
+                <span class="reporter-method-output"> [2023-09-17 14:39:54,760] **************User info is displayed**************
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGetUserByName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"> [2023-09-17 14:39:54,802] **************Reading user info**************
+<br></span>
+                <span class="reporter-method-output"> [2023-09-17 14:39:56,718] **************User info is displayed**************
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDeleteUserByName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"> [2023-09-17 14:39:59,962] **************Deleting user**************
+<br></span>
+                <span class="reporter-method-output"> [2023-09-17 14:40:01,341] **************user deleted**************
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testUpdateUserByName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"> [2023-09-17 14:39:56,726] **************Updating user**************
+<br></span>
+                <span class="reporter-method-output"> [2023-09-17 14:39:58,550] **************User updated**************
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -219,10 +303,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">autoApiRestAssure.HTTPRequests</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getUser</span>
+              <div class="chronological-class-name">petStore.api.test.UserTests2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupData</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testPostUser</span>
+                <span class="method-start">491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByName</span>
+                <span class="method-start">4885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserByName</span>
+                <span class="method-start">6806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserByName</span>
+                <span class="method-start">10045 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

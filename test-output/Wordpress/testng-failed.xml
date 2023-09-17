@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Wordpress]">
+  <parameter name="urlUser" value="http://localhost/"/>
+  <parameter name="urlAdmin" value="http://localhost/wp-login.php"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search">
+        <methods>
+          <include name="Post_04_Delete_Post"/>
+          <include name="Post_03_Edit_Post"/>
+          <include name="beforeClass"/>
+          <include name="Post_02_Search_Post"/>
+          <include name="Post_01_Creat_New_Post"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search -->
+    </classes>
+  </test> <!-- Run on chrome(failed) -->
+</suite> <!-- Failed suite [Wordpress] -->

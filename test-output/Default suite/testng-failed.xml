@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="autoApiRestAssure.HTTPRequests">
+      <class name="petStore.api.test.DataDrivenTests">
         <methods>
-          <include name="getUser"/>
+          <include name="testDeleteUserByName" invocation-numbers="0 1 2"/>
+          <include name="testPostUser"/>
         </methods>
-      </class> <!-- autoApiRestAssure.HTTPRequests -->
+      </class> <!-- petStore.api.test.DataDrivenTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
