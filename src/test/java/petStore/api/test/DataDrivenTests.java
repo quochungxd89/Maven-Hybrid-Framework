@@ -8,10 +8,11 @@ import petStore.api.payload.User;
 import petStore.api.utilities.DataProviders;
 
 public class DataDrivenTests {
+	User userPayload;
+	Response response;
 	@Test(priority = 1, dataProvider = "Data", dataProviderClass = DataProviders.class)
 	public void testPostUser(String ID, String username, String firstname, String lastname, String email, String password, String phone) {
-		User userPayload = new User();
-
+		userPayload = new User();
 		userPayload.setId(Integer.parseInt(ID));
 		userPayload.setUsername(username);
 		userPayload.setFirstName(firstname);

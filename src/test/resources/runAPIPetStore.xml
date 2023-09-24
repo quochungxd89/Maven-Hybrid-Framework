@@ -5,7 +5,7 @@
 	</listeners>
 		<test name="Pet Test">
 		<classes>
-			<class name="petStore.api.test.UserTests"/>
+			<class name="petStore.api.test.DataDrivenTests"/>
 		</classes>
 	</test>
 </suite>
