@@ -36,4 +36,18 @@ public class DataProviders {
 
 		return apidata;
 	}
+
+	@DataProvider(name = "FirstNames")
+	public String[] getfirtNames() throws IOException {
+		String path = System.getProperty("user.dir") + "//testData//UserData.xlsx";
+		XLUtility xl = new XLUtility(path);
+
+		int rownum = xl.getRowCount("Sheet1");
+		String apidata[] = new String[rownum];
+		for (int i = 1; i <= rownum; i++) {
+			apidata[i - 1] = xl.getCellData("Sheet1", i, 1);
+		}
+
+		return apidata;
+	}
 }

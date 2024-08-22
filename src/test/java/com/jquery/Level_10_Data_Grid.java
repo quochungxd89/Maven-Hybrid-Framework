@@ -25,7 +25,7 @@ public class Level_10_Data_Grid extends BaseTest {
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
-	// @Test
+	 @Test
 	public void Table_01_Paging() {
 		homePage.openPagingByPageNumber("10");
 		Assert.assertTrue(homePage.isPageNumberActived("10"));
@@ -40,7 +40,7 @@ public class Level_10_Data_Grid extends BaseTest {
 
 	}
 
-	// @Test
+	 @Test
 	public void Table_02_Enter_To_Header() {
 		homePage.refreshCurrentPage(driver);
 
@@ -58,7 +58,7 @@ public class Level_10_Data_Grid extends BaseTest {
 
 	}
 
-	// @Test
+	 @Test
 	public void Table_03_Enter_To_Header() {
 		// homePage.getValueEachRowAtAllPage();
 

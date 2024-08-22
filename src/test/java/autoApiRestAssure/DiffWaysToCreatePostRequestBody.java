@@ -17,7 +17,7 @@ public class DiffWaysToCreatePostRequestBody {
     //1. Post request body using Hashmap
    @Test(priority = 1)
     void testPostUsingHashmap(){
-        HashMap data = new HashMap();
+        HashMap<String, Object> data = new HashMap<String, Object>();
         data.put("name","Scott");
         data.put("location", "France");
         data.put("phone","1232325");

@@ -4,6 +4,8 @@ import com.github.javafaker.Faker;
 
 import io.restassured.response.Response;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
@@ -49,21 +51,26 @@ public class UserTests {
 
 		Response response = UserEndPoints.readUser(this.userPayload.getUsername());
 		response.then().log().all();
+
+		// verify du lieu
 		Assert.assertEquals(response.getStatusCode(), 200);
+		response.then().body("username", equalTo(this.userPayload.getUsername()));
 		logger.info("**************User info is displayed**************");
 
 	}
 
-	@Test(priority = 3)
+	 @Test(priority = 3)
 	public void testUpdateUserByName() {
+		 Response response = UserEndPoints.readUser(this.userPayload.getUsername());
+		 response.then().log().body();
 		logger.info("**************Updating user**************");
 		// Update data using payload
 		userPayload.setFirstName(faker.name().firstName());
 		userPayload.setLastName(faker.name().lastName());
 		userPayload.setEmail(faker.internet().safeEmailAddress());
 
-		Response response = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
-		response.then().log().body();
+		response = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
+		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 
 		logger.info("**************User updated**************");
@@ -73,7 +80,7 @@ public class UserTests {
 		Assert.assertEquals(responseAfterUpdate.getStatusCode(), 200);
 	}
 
-	@Test(priority = 4)
+	 @Test(priority = 4)
 	public void testDeleteUserByName() {
 		logger.info("**************Deleting user**************");
 		Response response = UserEndPoints.deleteUser(this.userPayload.getUsername());

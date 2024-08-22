@@ -5,8 +5,7 @@
     <classes>
       <class name="petStore.api.test.DataDrivenTests">
         <methods>
-          <include name="testDeleteUserByName" invocation-numbers="0 1 2"/>
-          <include name="testPostUser"/>
+          <include name="testGetfirstNameByName" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- petStore.api.test.DataDrivenTests -->
     </classes>

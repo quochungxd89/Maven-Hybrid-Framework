@@ -8,7 +8,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.joda.time.DateTime;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,11 +28,12 @@ import utilities.DataHelper;
 
 public class BaseTest {
 	private WebDriver driver;
-	protected final Log log;
+//	protected final Log log;
+	protected final Logger log;
 	private String projectPath = System.getProperty("user.dir");
 
 	protected BaseTest() {
-		log = LogFactory.getLog(getClass());
+		log = LogManager.getLogger(getClass());
 	}
 
 	// set up cho webdriver manager 5.x
@@ -59,8 +63,21 @@ public class BaseTest {
 			throw new RuntimeException("Browser name invalid.");
 
 		}
-		driver.manage().window().setPosition(new Point(0, 0));
+//		driver.manage().window().setPosition(new Point(0, 0));
+		driver.manage().window().maximize();
+		driver.get(appUrl);
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		// Open a new tab
+		((JavascriptExecutor) driver).executeScript("window.open('', '_blank');");
+
+		// Switch to the new tab
+		String originalTab = driver.getWindowHandle();
+		for (String handle : driver.getWindowHandles()) {
+			if (!handle.equals(originalTab)) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 		driver.get(appUrl);
 		return driver;
 	}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce">
+<suite name="NopCommerce" parallel="classes" thread-count ="2">
 <!--	<listeners>-->
 <!--		<listener class-name="commons.MethodListener"></listener>-->
 		<!--	   report screen shot-->
@@ -13,8 +13,10 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<!--      <class name="com.nopcommerce.common.Common_01_Register_Cookie"/>-->
-<!--			<class name="com.nopcommerce.user.Level_18_Pattern_Object" />-->
+			<class name="com.nopcommerce.user.Level_18_Pattern_Object" />
 			<class name="com.nopcommerce.user.Level_20_Faker_Data" />
 		</classes>
+
 	</test>
+
 </suite>

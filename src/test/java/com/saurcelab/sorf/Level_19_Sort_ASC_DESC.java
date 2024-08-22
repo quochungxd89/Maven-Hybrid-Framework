@@ -1,5 +1,6 @@
 package com.saurcelab.sorf;
 
+import commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -13,8 +14,11 @@ import pageObjectSauceLab.PageGeneratorManager;
 import pageObjectSauceLab.ProductPageObject;
 
 public class Level_19_Sort_ASC_DESC extends BaseTest {
+	private WebDriver driver;
+	private LoginPageObject loginPage;
+	private ProductPageObject productPage;
 
-	@Parameters({ "browser", "url" })
+	@Parameters({"browser", "url"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
 		driver = getBrowserDriver(browserName, appUrl);
@@ -26,31 +30,36 @@ public class Level_19_Sort_ASC_DESC extends BaseTest {
 
 	}
 
-	// @Test
+	 @Test
 	public void Sort_01_Name() {
 		// ASC
+		 log.info("Sap xep name tu A toi Z");
 		productPage.selectItemInProductSortDropdown("Name (A to Z)");
 
-		Assert.assertTrue(productPage.isProductNameSortByASC());
+		verifyTrue(productPage.isProductNameSortByASC());
 
 		// DESC
-		productPage.selectItemInProductSortDropdown("Name (Z to A)");
+		 log.info("Sap xep name tu Z toi A");
+		 productPage.selectItemInProductSortDropdown("Name (Z to A)");
 
-		Assert.assertTrue(productPage.isProductNameSortByDESC());
+		verifyTrue(productPage.isProductNameSortByDESC());
 
 	}
 
 	@Test
 	public void Sort_02_Price() {
 		// ASC
+		log.info("Sắp xếp giá từ thấp đến cao");
 		productPage.selectItemInProductSortDropdown("Price (low to high)");
 
-		Assert.assertTrue(productPage.isProductPriceSortByASC());
+		verifyTrue(productPage.isProductPriceSortByASC());
 
 		// DESC
+		log.info("Sắp xếp giá từ cao đến thấp");
 		productPage.selectItemInProductSortDropdown("Price (high to low)");
 
-		Assert.assertTrue(productPage.isProductPriceSortByDESC());
+		verifyTrue(productPage.isProductPriceSortByDESC());
+		sleepInSecond(10);
 
 	}
 
@@ -59,8 +68,16 @@ public class Level_19_Sort_ASC_DESC extends BaseTest {
 		closeBrowserAndDriver();
 	}
 
-	private WebDriver driver;
-	private LoginPageObject loginPage;
-	private ProductPageObject productPage;
 
+
+	public void sleepInSecond(long timeInSecond) {
+
+		try {
+
+			Thread.sleep(timeInSecond * 1000);
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }

@@ -3,156 +3,37 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Run on chrome</title>
+  <title>Test Results Report - Run on Chrome</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Run on chrome</h1>
+<h1>Run on Chrome</h1>
 <p>
-  Test duration: 10,372s
+  Test duration: 78.301s
 </p>
 
-  <table class="resultsTable configTable">
-    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
-              <tr class="group">
-        <td colspan="3">com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  afterClass
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.testng.TestNGException: <br/>
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterClass annotated afterClass.<br/>
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)<br />
-              org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)<br />
-              org.testng.internal.Parameters.createParameters(Parameters.java:635)<br />
-              org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
-              org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  beforeClass
-      </td>
-  <td class="duration">
-    10,372s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"chrome", "http://localhost/wp-login.php", "http://localhost/"</span><br />
-    
-        
-
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed<br/>
-from unknown error: web view not found<br/>
-&nbsp; (Session info: chrome=116.0.5845.188)<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;LINHLE&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: ef7197d39f069a8f0910be7e7c21d1fc<br/>
-*** Element info: {Using=xpath, value=//input[@id=&apos;user-login&apos;]}</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-              commons.BasePage.getWebElement(BasePage.java:157)<br />
-              commons.BasePage.sendkeyToElement(BasePage.java:169)<br />
-              pageObjects.Wordpress.AdminLoginPO.enterToUserNameTextbox(AdminLoginPO.java:17)<br />
-              com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search.beforeClass(Post_01_Create_Read_Update_Delete_Search.java:42)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
-              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
-              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-    
-      </table>
 
 
 
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search</td>
+        <td colspan="3" class="group">com.saurcelab.sorf.Level_19_Sort_ASC_DESC</td>
       </tr>
             
 <tr>
   <td class="method">
-                  Post_01_Creat_New_Post
+                  Sort_01_Name
       </td>
   <td class="duration">
-    0,000s
+    60.293s
   </td>
   <td class="result">
-                               
+        
     
         
 
@@ -160,48 +41,19 @@ Session ID: ef7197d39f069a8f0910be7e7c21d1fc<br/>
 </tr>
 <tr>
   <td class="method">
-                  Post_02_Search_Post
+                  Sort_02_Price
       </td>
   <td class="duration">
-    0,000s
+    10.286s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Post_03_Edit_Post
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Post_04_Delete_Post
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
     
         
 
       </td>
 </tr>
       </table>
-
   
 </body>
 </html>

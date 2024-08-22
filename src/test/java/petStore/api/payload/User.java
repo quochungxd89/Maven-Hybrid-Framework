@@ -1,11 +1,6 @@
 package petStore.api.payload;
 
 public class User {
-//	private User user;
-//
-//	public User() {
-//		user = new User();
-//	}
 
 	public int getId() {
 		return id;

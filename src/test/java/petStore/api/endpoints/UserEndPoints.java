@@ -11,7 +11,8 @@ import static io.restassured.RestAssured.given;
 
 public class UserEndPoints {
 	public static Response createUser(User payload) {
-		Response response = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(payload).when().post(Routes.post_url);
+//		Response response = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(payload).when().post(Routes.post_url);
+		Response response = given().header("Content-Type","application/json").body(payload).when().post(Routes.post_url);
 		return response;
 	}
 

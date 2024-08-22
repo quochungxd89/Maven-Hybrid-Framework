@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+        </Console>
+
+        <!-- File Appender -->
+        <File name="FileAppender" fileName="${sys:project.path}/logs/app.log">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+        </File>
+
+        <!-- Rolling File Appender -->
+        <RollingFile name="RollingFileAppender" fileName="./logs/Report.log"
+                     filePattern="${sys:project.path}/logs/rolling-app-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="RollingFileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

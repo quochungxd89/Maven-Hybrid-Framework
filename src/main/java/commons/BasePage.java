@@ -284,6 +284,7 @@ public class BasePage {
 
 	public void uncheckToDefaultCheckbox(WebDriver driver, String xpathLocator) {
 		WebElement element = getWebElement(driver, xpathLocator);
+		waitForElementVisible(driver,xpathLocator);
 		if (element.isSelected()) {
 			element.click();
 		}
