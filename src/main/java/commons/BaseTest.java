@@ -28,7 +28,6 @@ import utilities.DataHelper;
 
 public class BaseTest {
 	private WebDriver driver;
-//	protected final Log log;
 	protected final Logger log;
 	private String projectPath = System.getProperty("user.dir");
 

@@ -12,3 +12,4 @@
 2024-08-22T21:33:03,161 [main] INFO  Level_19_Sort_ASC_DESC:170 -  -------------------------- PASSED -------------------------- 
 2024-08-22T21:33:13,171 [main] INFO  Level_19_Sort_ASC_DESC:226 - OS name = windows 10
 2024-08-22T21:33:13,171 [main] INFO  Level_19_Sort_ASC_DESC:229 - Driver instance name = chromedriver: chrome on windows (f0e6ec51881d9cf623b8451daf9509c5)
+2024-08-22T21:56:21,821 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
