@@ -1,0 +1,16 @@
+2024-08-25T11:23:12,259 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T11:23:12,264 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (7d6cd196a9e04f82beb64174dc6a0676)
+2024-08-25T11:28:36,873 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T11:28:36,876 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (a99561a07288dd894e024b1600228e56)
+2024-08-25T11:50:02,949 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T11:50:02,952 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (a2d518b1485ce7d6d4dd9777381a6e2c)
+2024-08-25T12:03:01,219 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T12:03:01,223 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (8d27c1f8a7d0ad28e813a89f5a5350fb)
+2024-08-25T12:12:47,557 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T12:12:47,560 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (2159f6ba6c7b61828a53ff7749b35ed5)
+2024-08-25T12:17:28,287 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T12:17:28,290 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (3272244a367d7985f14bd410bf1c18eb)
+2024-08-25T12:19:12,234 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T12:19:12,238 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (1e716c7e6c2320002baeac97d59ac356)
+2024-08-25T12:20:20,334 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-25T12:20:20,336 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (ab62b53bb293f9f0f546170b6093aa27)

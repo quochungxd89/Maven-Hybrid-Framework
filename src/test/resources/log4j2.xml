@@ -6,8 +6,13 @@
             <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
         </Console>
 
-        <!-- File Appender -->
-        <File name="FileAppender" fileName="./logs/app.log">
+        <!-- File Appender for Saurcelab package -->
+        <File name="PackagesaurcelabFileAppender" fileName="./logs/saurcelab.log">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+        </File>
+
+        <!-- File Appender for DemoDragAndDrop package -->
+        <File name="PackageDemoDragAndDropFileAppender" fileName="./logs/demoDragAndDrop.log">
             <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
         </File>
 
@@ -22,9 +27,19 @@
     </Appenders>
 
     <Loggers>
+        <!-- Logger for Saurcelab package -->
+        <Logger name="com.saurcelab.sorf" level="info" additivity="true">
+            <AppenderRef ref="PackagesaurcelabFileAppender"/>
+        </Logger>
+
+        <!-- Logger for DemoDragAndDrop package -->
+        <Logger name="demoDragAndDrop" level="info" additivity="true">
+            <AppenderRef ref="PackageDemoDragAndDropFileAppender"/>
+        </Logger>
+
+        <!-- Root Logger -->
         <Root level="info">
             <AppenderRef ref="ConsoleAppender"/>
-            <AppenderRef ref="FileAppender"/>
             <AppenderRef ref="RollingFileAppender"/>
         </Root>
     </Loggers>

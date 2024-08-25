@@ -1,6 +1,7 @@
 package commons;
 
 import java.time.Duration;
+import java.util.IllegalFormatException;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -156,15 +157,26 @@ public class BasePage {
 		}
 		return by;
 	}
+//	public String getDynamicLocator(String xpathLocator, String... dynamicValues) {
+//		xpathLocator = String.format(xpathLocator, (Object[]) dynamicValues);
+//		return xpathLocator;
+//
+//	}
 
 	public String getDynamicLocator(String locatorType, String... dynamicValues) {
 		String xpathLocator;
 		if (locatorType.startsWith("xpath=") || locatorType.startsWith("XPATH==") || locatorType.startsWith("Xpath=")) {
-			xpathLocator = String.format(locatorType.substring(6),(Object[]) dynamicValues );
-		}else {
-			throw new RuntimeException("Locator type is not support!");
+			try {
+				// Cắt phần tiền tố "xpath=" và định dạng chuỗi
+				xpathLocator = String.format(locatorType, (Object[]) dynamicValues);
+				return xpathLocator;
+			} catch (IllegalFormatException e) {
+				throw new RuntimeException("Error formatting the XPath locator: " + e.getMessage(), e);
+			}
+		} else {
+			throw new RuntimeException("Locator type is not supported Dynamic Locator: " + locatorType);
 		}
-        return xpathLocator;
+
     }
 
 	public WebElement getWebElement(WebDriver driver, String locatorType) {
@@ -189,7 +201,7 @@ public class BasePage {
 	}
 
 	public void sendkeyToElement(WebDriver driver, String xpathLocator, String textValue, String... dynamicValues) {
-		WebElement element = getWebElement(driver, getDynamicLocator(xpathLocator, dynamicValues));
+		WebElement element = getWebElement(driver,xpathLocator, dynamicValues);
 		element.clear();
 		element.sendKeys(textValue);
 	}
@@ -601,7 +613,7 @@ public class BasePage {
 
 	/**
 	 * Enter to Dynamic Textbox by ID
-	 * 
+	 *
 	 * @author HUNG CQ
 	 * @param driver
 	 * @param textboxID
@@ -614,7 +626,7 @@ public class BasePage {
 
 	/**
 	 * Click to dynamic Button By text
-	 * 
+	 *
 	 * @author HUNG CQ
 	 * @param driver
 	 * @param buttonText
@@ -626,7 +638,7 @@ public class BasePage {
 
 	/**
 	 * Slect item in dropdown by Name attribute
-	 * 
+	 *
 	 * @author HUNG CQ
 	 * @param driver
 	 * @param dropdowAttributeName
@@ -639,7 +651,7 @@ public class BasePage {
 
 	/**
 	 * Click to Dynamic Radio Button By Label Name
-	 * 
+	 *
 	 * @param driver
 	 * @param radioButtonLabelName
 	 */
@@ -650,7 +662,7 @@ public class BasePage {
 
 	/**
 	 * Click to Dynamic check box By Label Name
-	 * 
+	 *
 	 * @param driver
 	 * @param checkboxLabelName
 	 */
@@ -662,7 +674,7 @@ public class BasePage {
 
 	/**
 	 * Get value in textbox by textbox ID
-	 * 
+	 *
 	 * @param driver
 	 * @param textboxID
 	 * @return
@@ -709,18 +721,19 @@ public class BasePage {
 		} catch (Exception e) {
 			System.out.println("Error performing drag and drop: " + e.getMessage());
 		}}
-	public void dragAndDrop(WebDriver driver, String sourceLocatorElement, String tagrgetLocatorElement, String DynamicText1, String DynamicText2){
+	public void dragAndDrop(WebDriver driver, String sourceLocatorType, String targetLocatorType, String dynamicValue1, String dynamicValue2) {
 		try {
-			waitForElementVisible(driver, sourceLocatorElement,DynamicText1);
-			waitForElementVisible(driver, tagrgetLocatorElement,DynamicText2);
+			waitForElementVisible(driver, sourceLocatorType,dynamicValue1);
+			waitForElementVisible(driver, targetLocatorType,dynamicValue2);
 			Actions actions = new Actions(driver);
-			actions.clickAndHold(getWebElement(driver,sourceLocatorElement,DynamicText1))
-					.moveToElement(getWebElement(driver,tagrgetLocatorElement,DynamicText2))
+			actions.clickAndHold(getWebElement(driver,sourceLocatorType,dynamicValue1))
+					.moveToElement(getWebElement(driver,targetLocatorType,dynamicValue2))
 					.release()
 					.perform();
 		} catch (Exception e) {
 			System.out.println("Error performing drag and drop: " + e.getMessage());
-		}}
+		}
+	}
 	public UserHomePageObject userClickToLogoutLink(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.USER_LOGOUT_LINK);
 		clickToElement(driver, BasePageUI.USER_LOGOUT_LINK);

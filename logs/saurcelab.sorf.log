@@ -1,0 +1,10 @@
+2024-08-25T10:24:51,739 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
+2024-08-25T10:25:21,841 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:25:21,842 [main] INFO  Level_19_Sort_ASC_DESC:42 - Sap xep name tu Z toi A
+2024-08-25T10:25:51,919 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:25:51,979 [main] INFO  Level_19_Sort_ASC_DESC:52 - Sắp xếp giá từ thấp đến cao
+2024-08-25T10:25:52,089 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:25:52,089 [main] INFO  Level_19_Sort_ASC_DESC:58 - Sắp xếp giá từ cao đến thấp
+2024-08-25T10:25:52,185 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:26:02,187 [main] INFO  Level_19_Sort_ASC_DESC:224 - OS name = windows 10
+2024-08-25T10:26:02,187 [main] INFO  Level_19_Sort_ASC_DESC:227 - Driver instance name = chromedriver: chrome on windows (60e7c2162d56e6b88d2329e9f8f77142)
