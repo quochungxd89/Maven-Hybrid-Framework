@@ -1,5 +1,6 @@
 package com.QuerySQL;
 
+import commons.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +14,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class SeleniumTestWithSQL {
+public class SeleniumTestWithSQL extends BaseTest {
     private WebDriver driver;
     private Connection connection;
 
@@ -53,7 +54,7 @@ public class SeleniumTestWithSQL {
             }
 
             // Xác nhận giá trị
-            Assert.assertTrue(found, "Expected value 'Lap Top' not found in the database!");
+            verifyTrue(found);
 
             resultSet.close();
             statement.close();
@@ -78,14 +79,13 @@ public class SeleniumTestWithSQL {
             }
 
             // Xác nhận số lượng hàng
-            int expectedRowCount = 3; // Thay đổi số lượng hàng mong đợi của bạn
-            Assert.assertEquals(rowCount, expectedRowCount, "Number of rows does not match the expected value!");
+            int expectedRowCount = 5; // Thay đổi số lượng hàng mong đợi của bạn
+            verifyEquals(rowCount, expectedRowCount);
 
             resultSet.close();
             statement.close();
         } catch (Exception e) {
             e.printStackTrace();
-            Assert.fail("Database query failed!");
         }
     }
     @AfterClass

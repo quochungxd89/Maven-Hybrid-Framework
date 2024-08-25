@@ -19,7 +19,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -66,18 +65,18 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.get(appUrl);
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		// Open a new tab
-		((JavascriptExecutor) driver).executeScript("window.open('', '_blank');");
-
-		// Switch to the new tab
-		String originalTab = driver.getWindowHandle();
-		for (String handle : driver.getWindowHandles()) {
-			if (!handle.equals(originalTab)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-		driver.get(appUrl);
+//		// Open a new tab
+//		((JavascriptExecutor) driver).executeScript("window.open('', '_blank');");
+//
+//		// Switch to the new tab
+//		String originalTab = driver.getWindowHandle();
+//		for (String handle : driver.getWindowHandles()) {
+//			if (!handle.equals(originalTab)) {
+//				driver.switchTo().window(handle);
+//				break;
+//			}
+//		}
+//		driver.get(appUrl);
 		return driver;
 	}
 
@@ -136,9 +135,9 @@ public class BaseTest {
 		} else if (browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
-		} else if (browserName.equals("opera")) {
-			System.setProperty("webdriver.opera.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
-			driver = new OperaDriver();
+//		} else if (browserName.equals("opera")) {
+//			System.setProperty("webdriver.opera.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
+//			driver = new OperaDriver();
 
 		} else {
 

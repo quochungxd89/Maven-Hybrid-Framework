@@ -1,8 +1,14 @@
 package com.nopcommerce.user;
 
+import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -132,4 +138,31 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 		driver.quit();
 	}
 
+    public static class Topic_16_Shadow_Dom extends BaseTest {
+        WebDriver driver;
+        @BeforeClass
+        public void beforeClass(){
+            driver = WebDriverManager.chromedriver().create();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        }
+        @Test
+        public void TC_01(){
+        driver.get("https://automationfc.github.io/shadow-dom/");
+        //Di theo dung cau truc html
+            WebElement shadowHostElement = driver.findElement(By.cssSelector("div#shadow_host"));
+            SearchContext shadowRootContext = shadowHostElement.getShadowRoot();
+            String sometext = shadowRootContext.findElement(By.cssSelector("span#shadow_content>span")).getText();
+            System.out.println(sometext);
+            verifyEquals(sometext,"some text");
+
+            List<WebElement> allInput = shadowRootContext.findElements(By.cssSelector("input"));
+            System.out.println(allInput.size());
+            verifyEquals(allInput.size(),3);
+        }
+        @AfterClass
+        public void afterClass() {
+            driver.quit();
+        }
+    }
 }

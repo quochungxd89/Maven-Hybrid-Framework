@@ -1,5 +1,6 @@
 package commons;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
@@ -49,7 +50,7 @@ public class BasePageFactory {
 	}
 
 	protected Alert waitForAlertPresence(WebDriver driver) {
-		WebDriverWait expliciWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait expliciWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		return expliciWait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -149,7 +150,7 @@ public class BasePageFactory {
 		getWebElement(driver, parentXpath).click();
 		sleepInSecond(1);
 
-		WebDriverWait expliciWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait expliciWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 
 		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childXpath)));
 
@@ -266,7 +267,7 @@ public class BasePageFactory {
 	}
 
 	protected boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
 		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
@@ -306,27 +307,27 @@ public class BasePageFactory {
 	}
 
 	protected void waitForElementVisible(WebDriver driver, WebElement emailErrorMessage) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		explicitWait.until(ExpectedConditions.visibilityOf(emailErrorMessage));
 	}
 
 	protected void waitForAllElementVisible(WebDriver driver, List<WebElement> elements) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		explicitWait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 
 	protected void waitForElementInvisible(WebDriver driver, WebElement element) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		explicitWait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
 	protected void waitForAllElementInvisible(WebDriver driver, List<WebElement> elements) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(elements));
 	}
 
 	protected void waitForElementClickable(WebDriver driver, WebElement element) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
 		explicitWait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 

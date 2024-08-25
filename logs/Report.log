@@ -1,15 +1,22 @@
-2024-08-22T21:22:30,015 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
-2024-08-22T21:23:00,165 [main] INFO  Level_19_Sort_ASC_DESC:42 - Sap xep name tu Z toi A
-2024-08-22T21:23:40,651 [main] INFO  Level_19_Sort_ASC_DESC:226 - OS name = windows 10
-2024-08-22T21:23:40,651 [main] INFO  Level_19_Sort_ASC_DESC:229 - Driver instance name = chromedriver: chrome on windows (c41c85432e0aae0bf66ecf221814a6a8)
-2024-08-22T21:32:02,567 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
-2024-08-22T21:32:32,681 [main] INFO  Level_19_Sort_ASC_DESC:170 -  -------------------------- PASSED -------------------------- 
-2024-08-22T21:32:32,682 [main] INFO  Level_19_Sort_ASC_DESC:42 - Sap xep name tu Z toi A
-2024-08-22T21:33:02,819 [main] INFO  Level_19_Sort_ASC_DESC:170 -  -------------------------- PASSED -------------------------- 
-2024-08-22T21:33:02,884 [main] INFO  Level_19_Sort_ASC_DESC:52 - Sắp xếp giá từ thấp đến cao
-2024-08-22T21:33:03,028 [main] INFO  Level_19_Sort_ASC_DESC:170 -  -------------------------- PASSED -------------------------- 
-2024-08-22T21:33:03,029 [main] INFO  Level_19_Sort_ASC_DESC:58 - Sắp xếp giá từ cao đến thấp
-2024-08-22T21:33:03,161 [main] INFO  Level_19_Sort_ASC_DESC:170 -  -------------------------- PASSED -------------------------- 
-2024-08-22T21:33:13,171 [main] INFO  Level_19_Sort_ASC_DESC:226 - OS name = windows 10
-2024-08-22T21:33:13,171 [main] INFO  Level_19_Sort_ASC_DESC:229 - Driver instance name = chromedriver: chrome on windows (f0e6ec51881d9cf623b8451daf9509c5)
-2024-08-22T21:56:21,821 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
+2024-08-25T09:16:24,602 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
+2024-08-25T09:16:54,704 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T09:16:54,704 [main] INFO  Level_19_Sort_ASC_DESC:42 - Sap xep name tu Z toi A
+2024-08-25T09:17:24,818 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T09:17:24,893 [main] INFO  Level_19_Sort_ASC_DESC:52 - Sắp xếp giá từ thấp đến cao
+2024-08-25T09:17:25,007 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T09:17:25,008 [main] INFO  Level_19_Sort_ASC_DESC:58 - Sắp xếp giá từ cao đến thấp
+2024-08-25T09:17:25,101 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T09:17:35,117 [main] INFO  Level_19_Sort_ASC_DESC:224 - OS name = windows 10
+2024-08-25T09:17:35,118 [main] INFO  Level_19_Sort_ASC_DESC:227 - Driver instance name = chromedriver: chrome on windows (27b1cdf547dc294194ed169675baa7e2)
+2024-08-25T09:59:32,695 [main] INFO  Topic_16_Shadow_Dom:206 -  -------------------------- PASSED -------------------------- 
+2024-08-25T09:59:32,711 [main] INFO  Topic_16_Shadow_Dom:188 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:03:40,497 [main] INFO  Topic_16_Shadow_Dom:206 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:03:40,513 [main] INFO  Topic_16_Shadow_Dom:188 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:09:47,728 [main] INFO  Level_13_Element_Undisplayed:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:09:47,948 [main] INFO  Level_13_Element_Undisplayed:170 -  -------------------------- FAILED -------------------------- 
+2024-08-25T10:09:51,062 [main] INFO  Level_13_Element_Undisplayed:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:10:03,185 [main] INFO  Level_13_Element_Undisplayed:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:13:31,149 [main] INFO  Level_13_Element_Undisplayed:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:13:31,347 [main] INFO  Level_13_Element_Undisplayed:170 -  -------------------------- FAILED -------------------------- 
+2024-08-25T10:13:34,458 [main] INFO  Level_13_Element_Undisplayed:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T10:13:46,543 [main] INFO  Level_13_Element_Undisplayed:168 -  -------------------------- PASSED -------------------------- 

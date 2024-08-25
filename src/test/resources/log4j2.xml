@@ -13,7 +13,7 @@
 
         <!-- Rolling File Appender -->
         <RollingFile name="RollingFileAppender" fileName="./logs/Report.log"
-                     filePattern="${sys:project.path}/logs/rolling-app-%d{yyyy-MM-dd}.log">
+                     filePattern="./logs/rolling-app-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
