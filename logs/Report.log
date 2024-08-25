@@ -44,3 +44,18 @@
 2024-08-25T12:20:20,336 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (ab62b53bb293f9f0f546170b6093aa27)
 2024-08-25T12:22:36,359 [main] INFO  Topic_16_Shadow_Dom:206 -  -------------------------- PASSED -------------------------- 
 2024-08-25T12:22:36,374 [main] INFO  Topic_16_Shadow_Dom:206 -  -------------------------- PASSED -------------------------- 
+2024-08-25T15:39:45,318 [main] INFO  Level_19_Sort_ASC_DESC:36 - Sap xep name tu A toi Z
+2024-08-25T15:40:15,400 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T15:40:15,400 [main] INFO  Level_19_Sort_ASC_DESC:42 - Sap xep name tu Z toi A
+2024-08-25T15:40:45,471 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T15:40:45,545 [main] INFO  Level_19_Sort_ASC_DESC:52 - Sắp xếp giá từ thấp đến cao
+2024-08-25T15:40:45,645 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T15:40:45,645 [main] INFO  Level_19_Sort_ASC_DESC:58 - Sắp xếp giá từ cao đến thấp
+2024-08-25T15:40:45,726 [main] INFO  Level_19_Sort_ASC_DESC:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T15:40:55,742 [main] INFO  Level_19_Sort_ASC_DESC:224 - OS name = windows 10
+2024-08-25T15:40:55,742 [main] INFO  Level_19_Sort_ASC_DESC:227 - Driver instance name = chromedriver: chrome on windows (f93ba091b7638c35dcd8dd6e0b128947)
+2024-08-25T20:50:50,085 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T20:58:09,045 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T21:05:32,544 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T21:12:43,577 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 
+2024-08-25T21:23:19,042 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 

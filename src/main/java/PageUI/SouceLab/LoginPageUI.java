@@ -1,8 +1,8 @@
 package PageUI.SouceLab;
 
 public class LoginPageUI {
-	public static final String USERNAME_TEXTBOX = "xpath=//input[@id='user-name']";
-	public static final String PASSWORD_TEXTBOX = "xpath=//input[@id='password']";
-	public static final String LOGIN_BUTTON = "xpath=//input[@id='login-button']";
+	public static final String USERNAME_TEXTBOX = "id=user-name";
+	public static final String PASSWORD_TEXTBOX = "id=password";
+	public static final String LOGIN_BUTTON = "id=login-button";
 
 }
