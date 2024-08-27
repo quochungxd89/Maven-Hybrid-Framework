@@ -22,6 +22,7 @@ public class TestDemoDragAndDrop extends BaseTest {
     }
     @Test
     public void dragAndDrop(){
+        log.info("Drag and drop");
         homePage.dragAndDropItem(driver,"angular");
         homePage.dragAndDropItem(driver,"mongo");
     }

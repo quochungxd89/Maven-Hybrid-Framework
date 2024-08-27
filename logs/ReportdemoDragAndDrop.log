@@ -1,0 +1,10 @@
+2024-08-27T20:16:39,162 [main] INFO  TestDemoDragAndDrop:25 - Drag and drop
+2024-08-27T20:16:43,855 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-27T20:16:43,856 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (574611af4eb03f11fbcdd70bc78a748c)
+2024-08-27T20:17:59,205 [main] INFO  TestDemoDragAndDrop:25 - Drag and drop
+2024-08-27T20:18:03,899 [main] INFO  TestDemoDragAndDrop:224 - OS name = windows 10
+2024-08-27T20:18:03,899 [main] INFO  TestDemoDragAndDrop:227 - Driver instance name = chromedriver: chrome on windows (42f7f41ed8d2ca4bfd44258cb875a298)
+2024-08-27T20:20:16,340 [main] INFO  Topic_17_Frame_Iframe:29 - Truy cap trang A
+2024-08-27T20:20:26,915 [main] INFO  Topic_17_Frame_Iframe:36 - iframe hien thi
+2024-08-27T20:20:26,937 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 
+2024-08-27T20:20:26,937 [main] INFO  Topic_17_Frame_Iframe:40 - swich vao iframe/frame

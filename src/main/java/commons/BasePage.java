@@ -76,7 +76,7 @@ public class BasePage {
 		return expliciWait.until(ExpectedConditions.alertIsPresent());
 	}
 
-	protected void acceptAlert(WebDriver driver) {
+	public void acceptAlert(WebDriver driver) {
 		waitForAlertPresence(driver).accept();
 	}
 
@@ -105,7 +105,7 @@ public class BasePage {
 
 	}
 
-	protected void switchToWindowByPageTitle(WebDriver driver, String tabTitle) {
+	public void switchToWindowByPageTitle(WebDriver driver, String tabTitle) {
 		Set<String> allWindowID = driver.getWindowHandles();
 
 		for (String id : allWindowID) {
@@ -396,7 +396,40 @@ public class BasePage {
 	public void switchToDefaultContent(WebDriver driver) {
 		driver.switchTo().defaultContent();
 	}
+	public void clickFromKeyBoard(WebDriver driver, String key){
+		Actions action = new Actions(driver);
 
+		// Xác định phím tương ứng từ chuỗi đầu vào
+		Keys seleniumKey = getKeyFromString(key);
+		if (seleniumKey != null) {
+			action.sendKeys(seleniumKey).perform();
+		} else {
+			System.out.println("Phím không hợp lệ: " + key);
+		}
+	}
+	private Keys getKeyFromString(String key) {
+		switch (key.toUpperCase()) {
+			case "ESCAPE":
+				return Keys.ESCAPE;
+			case "ENTER":
+				return Keys.ENTER;
+			case "TAB":
+				return Keys.TAB;
+			case "BACK_SPACE":
+				return Keys.BACK_SPACE;
+			case "ARROW_UP":
+				return Keys.ARROW_UP;
+			case "ARROW_DOWN":
+				return Keys.ARROW_DOWN;
+			case "ARROW_LEFT":
+				return Keys.ARROW_LEFT;
+			case "ARROW_RIGHT":
+				return Keys.ARROW_RIGHT;
+			// Thêm các phím khác nếu cần
+			default:
+				return null;
+		}
+	}
 	public void hoverMouseToElement(WebDriver driver, String locatorType) {
 		Actions action = new Actions(driver);
 		action.moveToElement(getWebElement(driver, locatorType)).perform();

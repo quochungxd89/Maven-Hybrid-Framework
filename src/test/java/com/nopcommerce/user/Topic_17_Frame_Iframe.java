@@ -26,18 +26,18 @@ public class Topic_17_Frame_Iframe extends BaseTest {
  }
  @Test
     public void TC_01() {
-     //Truy cap trang A
+     log.info("Truy cap trang A");
      driver.get("https://www.formsite.com/templates/education/campus-safety-survey/");
      sleepInSecond(2);
      basePage.scrollToElement(driver,"css=div#imageTemplateContainer>img");
      basePage.clickToElement(driver,"css=div#imageTemplateContainer>img");
      sleepInSecond(3);
 
-     //iframe hien thi
+     log.info("iframe hien thi");
      WebElement formIframe = basePage.getWebElement(driver,"css=div#formTemplateContainer>iframe");
      verifyTrue(formIframe.isDisplayed());
 
-     //swich vao iframe/frame
+     log.info("swich vao iframe/frame");
      basePage.switchToFramIframe(driver,"css=div#formTemplateContainer>iframe");
      basePage.selectItemInDefaultDropdown(driver,"css=select#RESULT_RadioButton-2","Sophomore");
     sleepInSecond(3);
