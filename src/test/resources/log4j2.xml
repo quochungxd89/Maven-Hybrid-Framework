@@ -1,46 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
-        <!-- Console Appender -->
-        <Console name="ConsoleAppender" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
-        </Console>
-
-        <!-- File Appender for Saurcelab package -->
-        <File name="PackagesaurcelabFileAppender" fileName="./logs/saurcelab.log">
-            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
-        </File>
-
-        <!-- File Appender for DemoDragAndDrop package -->
-        <File name="PackageDemoDragAndDropFileAppender" fileName="./logs/demoDragAndDrop.log">
-            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
-        </File>
-
-        <!-- Rolling File Appender -->
-        <RollingFile name="RollingFileAppender" fileName="./logs/Report.log"
-                     filePattern="./logs/rolling-app-%d{yyyy-MM-dd}.log">
+        <!-- Rolling File Appender for ReportSaurcelab package -->
+        <RollingFile name="RollingFileAppenderSaurcelab" fileName="./logs/ReportSaurcelab.log"
+                     filePattern="./logs/ReportSaurcelab-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
             </Policies>
         </RollingFile>
+
+        <!-- Rolling File Appender for nopcommerce package -->
+        <RollingFile name="RollingFileAppendernopcommerce" fileName="./logs/Reportnopcommerce.log"
+                     filePattern="./logs/Reportnopcommerce%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+        <!-- Rolling File Appender for demoDragAndDrop package -->
+        <RollingFile name="RollingFileAppenderdemoDragAndDrop" fileName="./logs/ReportdemoDragAndDrop.log"
+                     filePattern="./logs/ReportdemoDragAndDrop%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>
+
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5p %c{1}:%L - %m%n"/>
+        </Console>
     </Appenders>
 
     <Loggers>
-        <!-- Logger for Saurcelab package -->
-        <Logger name="com.saurcelab.sorf" level="info" additivity="true">
-            <AppenderRef ref="PackagesaurcelabFileAppender"/>
+        <!-- Logger for ReportSaurcelab package -->
+        <Logger name="com.saurcelab.sorf" level="info" additivity="false">
+            <AppenderRef ref="RollingFileAppenderSaurcelab"/>
+            <AppenderRef ref="ConsoleAppender"/>
         </Logger>
 
-        <!-- Logger for DemoDragAndDrop package -->
-        <Logger name="demoDragAndDrop" level="info" additivity="true">
-            <AppenderRef ref="PackageDemoDragAndDropFileAppender"/>
+        <!-- Logger for nopcommerce package -->
+        <Logger name="com.nopcommerce.user" level="info" additivity="false">
+            <AppenderRef ref="RollingFileAppendernopcommerce"/>
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <!-- Logger for demoDragAndDrop package -->
+        <Logger name="demoDragAndDrop" level="info" additivity="false">
+            <AppenderRef ref="RollingFileAppenderdemoDragAndDrop"/>
+            <AppenderRef ref="ConsoleAppender"/>
         </Logger>
 
         <!-- Root Logger -->
         <Root level="info">
             <AppenderRef ref="ConsoleAppender"/>
-            <AppenderRef ref="RollingFileAppender"/>
+            <AppenderRef ref="RollingFileAppenderSaurcelab"/>
+            <AppenderRef ref="RollingFileAppendernopcommerce"/>
+            <AppenderRef ref="RollingFileAppenderdemoDragAndDrop"/>
         </Root>
     </Loggers>
 </Configuration>
