@@ -10,23 +10,29 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageObject.jQuery.uploadFile.HomePageObject;
 import pageObject.jQuery.uploadFile.PageGeneratorManager;
+import reportConfig.ExtentTestManager;
+
+import java.lang.reflect.Method;
 
 public class Level_11_Upload_File extends BaseTest {
 	String beachFileName = "beach.jpg";
 	String computerFileName = "computer.jpg";
 	String mountainFileName = "mountain.jpg";
 	String[] multipleFileNames = { beachFileName, computerFileName, mountainFileName };
+	String testngXmlFileName = "runJqueryUpload.xml";
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
 		driver = getBrowserDriver(browserName, appUrl);
 		homePage = PageGeneratorManager.getHomePage(driver);
+		ExtentTestManager.createExtentReports(testngXmlFileName);
 	}
 
 	@Test
-	public void Upload_01_One_File_Per_Time() {
+	public void Upload_01_One_File_Per_Time(Method method) {
 		// step 01- Load single file
+		ExtentTestManager.startTest(method.getName(),"Upload_01_One_File_Per_Time",testngXmlFileName);
 		homePage.uploadMultipleFiles(driver, beachFileName);
 		// step 02- Verify single file load success
 		Assert.assertTrue(homePage.isFileloadedByName(beachFileName));
@@ -40,7 +46,8 @@ public class Level_11_Upload_File extends BaseTest {
 	}
 
 	@Test
-	public void Upload_02_Multiple_File_Per_Time() {
+	public void Upload_02_Multiple_File_Per_Time(Method method) {
+		ExtentTestManager.startTest(method.getName(),"Upload_02_Multiple_File_Per_Time",testngXmlFileName);
 		homePage.refreshCurrentPage(driver);
 		// step 01- Load multiple file
 		homePage.uploadMultipleFiles(driver, multipleFileNames);

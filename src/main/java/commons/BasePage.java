@@ -92,7 +92,10 @@ public class BasePage {
 	protected void sendkeyToAlert(WebDriver driver, String textValue) {
 		waitForAlertPresence(driver).sendKeys(textValue);
 	}
-
+	public  void getAuthenAlertByUrl(WebDriver driver,String url,String userName, String passWord) {
+		String[] authenArray = url.split("//");
+		driver.get(authenArray[0] +"//" + userName + ":" + passWord + "@" + authenArray[1]);
+	}
 	protected void switchToWindowByID(WebDriver driver, String windowID) {
 		Set<String> allWindowID = driver.getWindowHandles();
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Chrome"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.445">
+  <properties />
+  
+  
+            <testcase name="Sort_02_Price" time="10.219" classname="com.saurcelab.sorf.Level_19_Sort_ASC_DESC" />
+                <testcase name="Sort_01_Name" time="0.226" classname="com.saurcelab.sorf.Level_19_Sort_ASC_DESC" />
+      
+</testsuite>
