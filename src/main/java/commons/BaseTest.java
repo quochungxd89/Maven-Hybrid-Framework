@@ -6,6 +6,9 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.logging.log4j.LogManager;
@@ -23,6 +26,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import reportConfig.ExtentTestManager;
 import utilities.DataHelper;
 
 public class BaseTest {
@@ -181,7 +185,7 @@ public class BaseTest {
 		return checkTrue(condition);
 	}
 
-	private boolean checkFailed(boolean condition) {
+	protected boolean checkFailed(boolean condition) {
 		boolean pass = true;
 		try {
 			Assert.assertFalse(condition);
@@ -189,6 +193,13 @@ public class BaseTest {
 		} catch (Throwable e) {
 			log.info(" -------------------------- FAILED -------------------------- ");
 			pass = false;
+			// Ghi lỗi vào ExtentReports
+			if (ExtentTestManager.getTest() != null) {
+				ExtentTestManager.getTest().log(Status.FAIL, "Test failed due to: " + e.getMessage());
+				ExtentTestManager.getTest().log(Status.FAIL, MarkupHelper.createLabel("Error details", ExtentColor.RED));
+			} else {
+				System.err.println("ExtentTest is null, unable to log failure.");
+			}
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}

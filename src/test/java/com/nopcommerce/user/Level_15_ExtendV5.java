@@ -36,7 +36,7 @@ public class Level_15_ExtendV5 extends BaseTest {
 
 	@Test
 	public void User_01_Register(Method method) {
-		ExtentTestManager.startTest(method.getName(), "Register to system with valid Email and Password");
+//		ExtentTestManager.startTest(method.getName(), "Register to system with valid Email and Password");
 		ExtentTestManager.getTest().log(Status.INFO, "Register - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.clickToRegisterLink();
 
@@ -68,7 +68,7 @@ public class Level_15_ExtendV5 extends BaseTest {
 
 	@Test
 	public void User_02_Login(Method method) {
-		ExtentTestManager.startTest(method.getName(), "Login to system successfull");
+//		ExtentTestManager.startTest(method.getName(), "Login to system successfull");
 		ExtentTestManager.getTest().log(Status.INFO, "Login - Step 01: Navigate to 'Login' page");
 		loginPage = homePage.clickToLoginLink();
 
