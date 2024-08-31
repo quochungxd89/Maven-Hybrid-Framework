@@ -30,11 +30,11 @@ public class Level_19_Sort_ASC_DESC extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
 		driver = getBrowserDriver(browserName, appUrl);
-		//loginPage = PageGeneratorManager.getLoginPageObject(driver);
+		loginPage = PageGeneratorManager.getLoginPageObject(driver);
 
-		//loginPage.enterToUserNameTextbox("standard_user");
-		//loginPage.enterToPasswordTextbox("secret_sauce");
-		//productPage = loginPage.clickToLoginButton();
+		loginPage.enterToUserNameTextbox("standard_user");
+		loginPage.enterToPasswordTextbox("secret_sauce");
+		productPage = loginPage.clickToLoginButton();
 		// Ensure reports are created
 		ExtentTestManager.createExtentReports(testngXmlFileName);
 
