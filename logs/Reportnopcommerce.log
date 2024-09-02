@@ -1,9 +1,0 @@
-2024-08-30T07:49:55,693 [main] INFO  Topic_17_Frame_Iframe:29 - Truy cap trang A
-2024-08-30T07:50:02,568 [main] INFO  Topic_17_Frame_Iframe:36 - iframe hien thi
-2024-08-30T07:50:02,588 [main] INFO  Topic_17_Frame_Iframe:168 -  -------------------------- PASSED -------------------------- 
-2024-08-30T07:50:02,588 [main] INFO  Topic_17_Frame_Iframe:40 - swich vao iframe/frame
-2024-08-30T08:16:18,290 [main] INFO  Topic_13_Aler_Authen:30 - truyen thang user/pass vao URL
-2024-08-30T08:16:21,714 [main] INFO  Topic_13_Aler_Authen:34 - iframe hien thi
-2024-08-30T08:16:21,714 [main] INFO  Topic_13_Aler_Authen:37 - swich vao iframe/frame
-2024-08-30T08:42:47,499 [main] INFO  Topic_13_Aler_Authen:36 - Dung ham split
-2024-08-30T08:46:45,219 [main] INFO  Topic_13_Aler_Authen:36 - Dung ham split

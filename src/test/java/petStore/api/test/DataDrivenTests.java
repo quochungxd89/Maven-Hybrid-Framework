@@ -37,14 +37,11 @@ public class DataDrivenTests {
 
 	}
 
-	@Test(priority = 3, dataProvider = "UserNames", dataProviderClass = DataProviders.class)
-	public void testGetfirstNameByName(String userName) {
+	@Test(priority = 3, dataProvider = "UserNamesAndFirstNames", dataProviderClass = DataProviders.class)
+	public void testGetfirstNameByName(String userName, String expectedFirstName) {
 		Response response = UserEndPoints.readUser(userName);
 		Assert.assertEquals(response.getStatusCode(), 200);
-		response.then().body("firstName", equalTo("John"));
-		response.then().body("firstName", equalTo("Kim"));
-		response.then().body("firstName", equalTo("Smith"));
-
+		response.then().body("firstName", equalTo(expectedFirstName));
 	}
 
 	@Test(priority = 4, dataProvider = "UserNames", dataProviderClass = DataProviders.class)

@@ -50,4 +50,17 @@ public class DataProviders {
 
 		return apidata;
 	}
+	@DataProvider(name = "UserNamesAndFirstNames")
+	public Object[][] getUserNamesAndFirstNames() throws IOException {
+		String path = System.getProperty("user.dir") + "//testData//UserData.xlsx";
+		XLUtility xl = new XLUtility(path);
+
+		int rownum = xl.getRowCount("Sheet1");
+		Object[][] apidata = new Object[rownum][2]; // 2 cột: userName và firstName
+		for (int i = 1; i <= rownum; i++) {
+			apidata[i - 1][0] = xl.getCellData("Sheet1", i, 1); // userName
+			apidata[i - 1][1] = xl.getCellData("Sheet1", i, 2); // firstName
+		}
+		return apidata;
+	}
 }

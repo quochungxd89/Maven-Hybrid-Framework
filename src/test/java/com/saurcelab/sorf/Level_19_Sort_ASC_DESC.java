@@ -77,7 +77,6 @@ public class Level_19_Sort_ASC_DESC extends BaseTest {
 
 		Assert.assertFalse(productPage.isProductPriceSortByDESC());
 		sleepInSecond(10);
-
 	}
 
 	@AfterClass(alwaysRun = true)
