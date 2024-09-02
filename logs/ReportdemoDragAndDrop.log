@@ -1,9 +1,3 @@
-2024-08-30T08:16:18,290 [main] INFO  Topic_13_Aler_Authen:30 - truyen thang user/pass vao URL
-2024-08-30T08:16:21,714 [main] INFO  Topic_13_Aler_Authen:34 - iframe hien thi
-2024-08-30T08:16:21,714 [main] INFO  Topic_13_Aler_Authen:37 - swich vao iframe/frame
-2024-08-30T08:42:47,499 [main] INFO  Topic_13_Aler_Authen:36 - Dung ham split
-2024-08-30T08:46:45,219 [main] INFO  Topic_13_Aler_Authen:36 - Dung ham split
-2024-08-30T09:52:53,625 [main] INFO  TestSwitchIframe:224 - OS name = windows 10
-2024-08-30T09:52:53,625 [main] INFO  TestSwitchIframe:227 - Driver instance name = chromedriver: chrome on windows (1c70451f8eaf6d6a1c399e6d09b2f851)
-2024-08-30T10:48:32,427 [main] INFO  TestSwitchIframe:224 - OS name = windows 10
-2024-08-30T10:48:32,429 [main] INFO  TestSwitchIframe:227 - Driver instance name = chromedriver: chrome on windows (ab2ef464481790d39a4e80d2b3a9a080)
+2024-09-02T14:42:19,010 [main] INFO  TestDemoDragAndDrop:25 - Drag and drop
+2024-09-02T14:42:23,699 [main] INFO  TestDemoDragAndDrop:235 - OS name = windows 10
+2024-09-02T14:42:23,699 [main] INFO  TestDemoDragAndDrop:238 - Driver instance name = chromedriver: chrome on windows (3ef71a3066e3e1067e0d70d80fcd4e73)

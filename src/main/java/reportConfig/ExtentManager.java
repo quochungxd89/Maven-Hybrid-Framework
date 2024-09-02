@@ -21,10 +21,17 @@ public class ExtentManager {
 		// Ensure the file name is sanitized to avoid illegal characters
 		String sanitizedFileName = testngXmlFileName.replaceAll("[^a-zA-Z0-9.-]", "_");
 
+		// Create a folder based on the current date
+		String dateFolderName = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+		File reportFolder = new File(GlobalConstants.PROJECT_PATH + "/extentV5/" + dateFolderName);
+		if (!reportFolder.exists()) {
+			reportFolder.mkdirs();
+		}
+
 		// Create a unique report file name based on the sanitized XML file name and current timestamp
-		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		String timestamp = new SimpleDateFormat("HHmmss").format(new Date());
 		String reportFileName = String.format("Report_%s_%s.html", sanitizedFileName, timestamp);
-		String reportPath = GlobalConstants.PROJECT_PATH + "/extentV5/" + reportFileName;
+		String reportPath = reportFolder.getPath() + "/" + reportFileName;
 
 		System.out.println("Report Path: " + reportPath); // Debug output
 
